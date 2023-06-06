@@ -6,8 +6,3 @@ export const StPublicLayoutDivWrapper = styled.div`
   display: flex;
   justify-content: center;
 `;
-
-export const StMainContainer = styled.div`
-  width: 70%;
-  background-color: grey;
-`;

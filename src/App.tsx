@@ -9,6 +9,8 @@ const ProductsView = lazy(() => import("./views/ProductsView/ProductsView"));
 const EachProductView = lazy(
   () => import("./views/EachProductView/EachProductView")
 );
+const AuthView = lazy(() => import("./views/AuthView/AuthView"));
+
 function App() {
   return (
     <Suspense>
@@ -18,6 +20,7 @@ function App() {
           <Route path="/products" element={<ProductsView />} />
           <Route path="/products/:id" element={<EachProductView />} />
         </Route>
+        <Route path="/auth/*" element={<AuthView />} />
       </Routes>
     </Suspense>
   );
